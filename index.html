@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <!-- <link rel="icon" type="image/png" href="favicon.png"> -->
+        <title>Mosaic</title>
+    </head>
+    <body>
+        <div id="TabBar">
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Tab1')">File</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab2')" id="defaultOpen">Colors</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')">Tools</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab4')">Shapes</button>
+            </div>
+            
+            <!-- Tab content -->
+            <div id="Tab1" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>File</h3>
+                <p>first tab</p>
+            </div>
+            
+            <div id="Tab2" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Colors</h3>
+                <p>second tab</p>
+            </div>
+            
+            <div id="Tab3" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Tools</h3>
+                <p>third tab</p>
+            </div>
+
+            <div id="Tab4" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Shapes</h3>
+                <p>fourth tab</p>
+            </div>
+        </div>
+        
+        <script src="tabBar.js"></script>
+
+        <canvas id="baseLayer"></canvas>
+        <script src="canvas.js"></script>
+        <script src="layers.js" defer></script>
+    </body>
+</html>

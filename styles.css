@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#TabBar {
+  position: relative;
+  z-index: 9999;
+  margin: 0 auto;
+  width: 60%;
+}
+
+#baseLayer {
+    border: 2px solid grey;
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+body {
+  font-family: Arial;
+  background-color: rgb(240, 239, 239)
+}
+
+
+
+/* Tab styling below */
+
+/* tab */
+.tab {
+  position: relative;
+  z-index: 9999;
+  
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e4e2e2;
+}
+
+/* buttons inside tab */
+.tab button {
+  position: relative;
+  z-index: 9999;
+
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* button background color on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* tab content */
+.tabcontent {
+  position: relative;
+  z-index: 9999;
+
+  background-color: rgba(171, 171, 171, 0.192);
+  display: none;
+  padding: 20px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/* close button */
+.topright {
+  position: relative;
+  z-index: 9999;
+
+  float: right;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.topright:hover {color: red;}
