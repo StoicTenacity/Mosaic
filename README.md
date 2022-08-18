@@ -5,17 +5,18 @@
 
 The following **basic** functionality is completed:
 
-* [ ] User can **select draw or paint tools** from a tab menu to mark the canvas
-* [ ] User can **change the size of the brush** from a tab menu
-* [ ] User can **select colors** from a tab menu
-* [ ] User can **save** to their Downloads folder on their device
-* [ ] User can **select and move an object** on canvas
-* [ ] User can **clear** the canvas
+* [X] User can **select draw or paint tools** from a tab menu to mark the canvas
+* [X] User can **change the size of the brush** from a tab menu
+* [X] User can **select colors** from a tab menu
+* [X] User can **save** to their Downloads folder on their device
+* [ ] User can **create shapes** on the canvas
+* [X] User can **clear** the canvas
 
 The following **additional** features are implemented:
 
 * [ ] "Save As" option that allows the user to specify the download location
 * [ ] Eraser tool
+* [ ] Select and move object(s)/shape(s) on the canvas
 * [ ] RGBA value adjustment
     - [ ] Tab menu input boxes for red, green, blue, alpha
     - [ ] Individual sliders for red, green, blue, alpha

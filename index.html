@@ -14,33 +14,79 @@
             <div class="tab">
                 <button class="tablinks" onclick="openTab(event, 'Tab1')">File</button>
                 <button class="tablinks" onclick="openTab(event, 'Tab2')" id="defaultOpen">Colors</button>
-                <button class="tablinks" onclick="openTab(event, 'Tab3')">Tools</button>
-                <button class="tablinks" onclick="openTab(event, 'Tab4')">Shapes</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab3')">Brushes</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab4')">Tools</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab5')">Shapes</button>
+                <button class="tablinks" onclick="openTab(event, 'Tab6')">Canvas Options</button>
             </div>
             
             <!-- Tab content -->
             <div id="Tab1" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>File</h3>
-                <p>first tab</p>
+                <h3>Save</h3>
+                <button onclick="saveImage()">
+                    Click to save image
+                    <a id="downloadlink"></a>
+                </button>
+                <!-- <p>first tab</p> -->
             </div>
             
             <div id="Tab2" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
                 <h3>Colors</h3>
-                <p>second tab</p>
+                <button class="colors" onclick="selectColor(event, 'Black')" id="black">Black</button>
+                <button class="colors" onclick="selectColor(event, 'White')" id="white">White</button>
+                <button class="colors" onclick="selectColor(event, 'Red')" id="red">Red</button>
+                <button class="colors" onclick="selectColor(event, 'Orange')" id="orange">Orange</button>
+                <button class="colors" onclick="selectColor(event, 'Yellow')" id="yellow">Yellow</button>
+                <button class="colors" onclick="selectColor(event, 'Green')" id="green">Green</button>
+                <button class="colors" onclick="selectColor(event, 'Blue')" id="blue">Blue</button>
+                <button class="colors" onclick="selectColor(event, 'Brown')" id="brown">Brown</button>
+                <button class="colors" onclick="selectColor(event, 'Purple')" id="purple">Purple</button>
+                <!-- <p>second tab</p> -->
             </div>
             
             <div id="Tab3" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-                <h3>Tools</h3>
-                <p>third tab</p>
+                <h3>Brushes</h3>
+                <button class="brushes" onclick="selectBrush(event, 'Pencil')" id="butt">Pencil</button>
+                <button class="brushes" onclick="selectBrush(event, 'Paint')" id="round">Paint Brush</button>
+                <label for="">Choose a brush size:</label>
+                <select id="size">
+                  <option value="1">Small</option>
+                  <option value="3">Medium</option>
+                  <option value="5">Large</option>
+                  <option value="10">Extra Large</option>
+                </select>
+                <!-- <p>third tab</p> -->
             </div>
 
             <div id="Tab4" class="tabcontent">
                 <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Tools</h3>
+                <p>Not available yet</p>
+                <button class="tools" onclick="selectTool(event, 'Bucket')" id="bucket">Paint Bucket Tool</button>
+                <button class="tools" onclick="selectTool(event, 'Gradient')" id="gradient">Gradient Tool</button>
+                <!-- <p>fourth tab</p> -->
+            </div>
+
+            <div id="Tab5" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
                 <h3>Shapes</h3>
-                <p>fourth tab</p>
+                <button class="shapes" onclick="selectShape(event, 'Circle')" id="circle">Circle</button>
+                <button class="shapes" onclick="selectShape(event, 'Square')" id="square">Square</button>
+                <button class="shapes" onclick="selectShape(event, 'Rectangle')" id="rectangle">Rectangle</button>
+                <button class="shapes" onclick="selectShape(event, 'Triangle')" id="triangle">Triangle</button>
+                <!-- <p>fifth tab</p> -->
+            </div>
+
+            <div id="Tab6" class="tabcontent">
+                <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                <h3>Canvas Options</h3>
+                <button onclick="clearCanvas()">
+                    Click to clear and reset the canvas
+                </button>
+                <!-- <p>fifth tab</p> -->
             </div>
         </div>
         
