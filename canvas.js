@@ -17,6 +17,7 @@ window.addEventListener("load", () => {
         
     //variables
     let painting = false;
+    let shapes = false;
     
     function startPosition(e){
         painting = true;

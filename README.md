@@ -1,6 +1,8 @@
 # Mosaic
 **Mosaic** is a browser based paint application with basic drawing and painting functionality along with image editting capabilities.
 
+[Click here to try it!](https://stoictenacity.github.io/Mosaic/)
+
 ## User Stories
 
 The following **basic** functionality is completed:
@@ -30,6 +32,7 @@ The following **additional** features are implemented:
 * [ ] Individual pixel editting
 * [ ] Additional paint tools
     - [ ] Paint bucket tool
+        - [ ] Tolerance option with input box and slider selection
     - [ ] Gradient tool
 * [ ] Precisely move selected object(s) with keyboard arrow keys
 * [ ] Image filters
