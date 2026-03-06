@@ -1,0 +1,28 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+}
+
+.toolbar {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    z-index: 10;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    cursor: crosshair;
+}
