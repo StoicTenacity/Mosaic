@@ -1,5 +1,5 @@
 # Mosaic
-**Mosaic** is a browser based paint application with basic drawing and painting functionality along with image editting capabilities.
+**Mosaic** is a browser based application with basic drawing and shapes functionality.
 
 [Click here to try it!](https://stoictenacity.github.io/Mosaic/)
 
@@ -7,17 +7,17 @@
 
 The following **basic** functionality is completed:
 
-* [X] User can **select draw or paint tools** from a tab menu to mark the canvas
-* [X] User can **change the size of the brush** from a tab menu
-* [X] User can **select colors** from a tab menu
+* [X] User can **select draw or paint tools** from the menu
+* [X] User can **change the size of the brush** using the slider
+* [X] User can **select colors**
 * [X] User can **save** to their Downloads folder on their device
-* [ ] User can **create shapes** on the canvas
+* [X] "Save As" option that allows the user to specify the download location
+* [X] User can **create shapes** on the canvas
 * [X] User can **clear** the canvas
+* [X] Eraser tool
 
 The following **additional** features are implemented:
 
-* [ ] "Save As" option that allows the user to specify the download location
-* [ ] Eraser tool
 * [ ] Select and move object(s)/shape(s) on the canvas
 * [ ] RGBA value adjustment
     - [ ] Tab menu input boxes for red, green, blue, alpha
@@ -52,12 +52,12 @@ The following **additional** features are implemented:
 
 
 ## Notes
-
+- Recently refactored code
 
 
 ## License/Copyright
 
-    Copyright [2022] [Jonathan Lin]
+    Copyright [2026] [Jonathan Lin]
 
     Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
     OR CONDITIONS OF ANY KIND, either express or implied.
